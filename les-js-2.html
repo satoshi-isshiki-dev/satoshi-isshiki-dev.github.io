@@ -1,0 +1,947 @@
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="styles/les-html-1.css">
+		<link rel="stylesheet" href="prism/prism.css">
+    <!-- <link rel="stylesheet" href="highlight/styles/atom-one-light.min.css"> -->
+
+    <title>Занятие 2 - Google Chrome. VSCode. Консоль</title>
+  </head>
+
+  <body>
+    <article id="817e3277-cd07-489e-9c7c-9a9472abbae3" class="page serif">
+      <header>
+        <div class="page-header-icon undefined">
+          <span class="icon">✅</span>
+        </div>
+        <h1 class="page-title">
+          Занятие 2 - Google Chrome. VSCode. <strong>Консоль</strong>
+        </h1>
+        <p class="page-description"></p>
+      </header>
+      <div class="page-body">
+        <p id="c3116fd2-885e-4ae0-9b03-0c59d633fc1b" class="">
+          Включаем ПК, проверяем чтобы всё работало, клавиатуры, мышки.
+        </p>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="a2a48766-28e9-4f4c-a547-8b8d8f2b8711"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Заходим под пользователем как называется ваша группа:<br>
+						<ul>
+							<li><strong>IT-1</strong> Вводный</li>
+							<li><strong>IT-2</strong> Вводный</li>
+							<li><strong>IT-3</strong> Углубленный</li>
+							<li><strong>IT-4</strong> Проектный</li>
+						</ul>
+          </div>
+        </figure>
+        <p id="12a81005-9024-4bb1-b0de-5112a4eff3fe" class="">
+          Открываем
+          <code
+            ><em><strong>Google Chrome</strong></em></code
+          ><em><strong> </strong></em>и проверим есть ли интернет.
+        </p>
+        <p id="b459f13a-9afd-4c19-aed0-d8f5f168cb85" class="">
+          В вашем распоряжении весь рабочий стол, пользователем здесь будете
+          <strong>только вы</strong>, поэтому можете создать директорию где вам
+          удобней: на <em>диске D</em> или в данном случае
+          <strong>лучше всего на рабочем столе</strong>, создаем папку с
+          <strong>вашей фамилией именем английскими буквами → </strong>
+        </p>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="4910e2de-7463-44c9-adb4-27ebc459a768"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            В этой папке создаем ещё папку для текущего занятия<strong> </strong
+            ><code><em>Занятие 2. Консоль</em></code>
+          </div>
+        </figure>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="0c4b9245-e24d-4f34-843f-4f09ae307715"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Группа которая работает с <code><em>Git</em></code
+            ><em> </em>создает новую ветку c названием
+            <code><em>lesson1.Console</em></code>
+          </div>
+        </figure>
+        <pre
+          id="474cd420-d9a5-4ddb-9b05-333b8eae4912"
+          class="code"
+        ><code class="language-js">// Создать новую ветку и сразу в нее перейти
+git checkout -b lesson1.Console</code></pre>
+        <p id="2d953095-6044-44e4-a30d-29c2895514f6" class="">Например так:</p>
+        <figure id="b547862f-574d-43a6-8779-42853dd15570" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/LBpYBUq4jU.png"
+            ><img
+              style="width: 280px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/LBpYBUq4jU.png"
+          /></a>
+          <figcaption>Создание рабочей директории</figcaption>
+        </figure>
+        <h2 id="1dbf5b12-f23e-4b30-a7cf-9cd5235a9b50" class="">
+          Цели на занятие
+        </h2>
+        <ul id="f6a02b71-0cfa-4719-9e5c-4c19ea6139e8" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Научиться работать с консолью в «<code
+              ><em>инструментах разработчика</em></code
+            >»
+          </li>
+        </ul>
+        <ul id="5cf47e52-4d99-459f-8e8a-cc47e51af8e2" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Написать «<code><em>Hello World</em></code
+            >» программу
+          </li>
+        </ul>
+        <ul id="4868c952-5acf-4f09-973f-6eafb130ae00" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Научиться писать JS код с помощью <code><em>VS Code</em></code>
+          </li>
+        </ul>
+        <ul id="a448997b-cefb-48e3-8e2f-a41fdf1b8788" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Начать изучать основы <code><em>арифметических операций</em></code>
+          </li>
+        </ul>
+        <ul id="3cece1db-213c-4aa5-8800-add25dbc6b42" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Выполнить <code><em>практическую часть</em></code
+            ><em> ← 🔥</em>
+          </li>
+        </ul>
+        <h2 id="7105ed2c-0fe4-41dd-a7aa-84124a33e08e" class="">
+          <strong>Повторим</strong>
+        </h2>
+        <ol
+          type="1"
+          id="ab109edf-b8d0-4152-8f93-f05676965cce"
+          class="numbered-list"
+          start="1"
+        >
+          <li>Чем занимается программист?</li>
+        </ol>
+        <ol
+          type="1"
+          id="c4d2f898-2616-4483-8d5a-4744590884ed"
+          class="numbered-list"
+          start="2"
+        >
+          <li>Что такое программа?</li>
+        </ol>
+        <ol
+          type="1"
+          id="11485111-b26c-41f2-9ada-624769940815"
+          class="numbered-list"
+          start="3"
+        >
+          <li>Чем программа отличается от алгоритма?</li>
+        </ol>
+        <ol
+          type="1"
+          id="d74227fd-8fd2-4dbb-b30f-34f0b9e4cf03"
+          class="numbered-list"
+          start="4"
+        >
+          <li>Что такое объект?</li>
+        </ol>
+        <ol
+          type="1"
+          id="c919ae64-5382-4e3f-be15-6a71c6fbd802"
+          class="numbered-list"
+          start="5"
+        >
+          <li>
+            Какие <code><em>две важные</em></code> характеристики есть у
+            объекта?
+          </li>
+        </ol>
+        <hr id="2c6e2421-3580-4b4b-95e9-8967e1afc477" />
+        <p id="e746a98d-52bb-410b-9ff7-06f291747cb2" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="31edc94e-5e92-450f-a4cf-f979e6d4f500"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            <strong>JavaScript </strong>— один из самых популярных и широко
+            используемых языков программирования.
+          </div>
+        </figure>
+        <p id="909ed3bf-3d60-430a-94a5-f8ebf9c8ad11" class="">
+          Он применяется в
+        </p>
+        <ul id="677f8332-29d6-4005-9f47-ba2413e8f981" class="bulleted-list">
+          <li style="list-style-type: disc">разработке игр,</li>
+        </ul>
+        <ul id="ab028951-34e9-4025-8d37-b92714e7f948" class="bulleted-list">
+          <li style="list-style-type: disc">создании Web-приложений,</li>
+        </ul>
+        <ul id="0d0d966e-7b6b-4cb0-9dd7-06efc8f23839" class="bulleted-list">
+          <li style="list-style-type: disc">создании мобильных приложений,</li>
+        </ul>
+        <ul id="ac9d4367-1bb5-4c51-9321-fe5a16e14902" class="bulleted-list">
+          <li style="list-style-type: disc">
+            создании нейросетей и искусственного интеллекта,
+          </li>
+        </ul>
+        <ul id="f70bd2e2-fe85-448a-9eab-21bcdc7d107a" class="bulleted-list">
+          <li style="list-style-type: disc">для серверных приложений.</li>
+        </ul>
+        <h3 id="01ca831a-dafc-4f01-be9f-973bf57af982" class="">
+          Для чего <strong>JavaScript </strong>нужен в Web-разработке?
+        </h3>
+        <p id="e6c8aa4b-3693-4386-aa39-40925f25b1c3" class="">
+          Для создания <code><em>динамических страниц</em></code>
+        </p>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="f42aba13-f0d0-442a-b269-15148a14368d"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            <strong>Динамические страницы</strong> — страницы, которые как-то
+            реагируют на действия пользователя.
+          </div>
+        </figure>
+        <p id="3bd0b085-300b-4fa0-8e49-f6114439b833" class="">
+          До это момента мы делали верстку с помощью
+          <code><em>статических страниц</em></code
+          >, т.е. которые практически не реагировали на действия пользователя.
+        </p>
+        <p id="8cc41a84-a025-4280-8870-8c32a07d87c8" class="">
+          Но некоторые приёмы для визуальный отклика мы уже использовали с
+          помощью <code><em>CSS</em></code
+          >, например <code><em>:hover</em></code>
+          <code><em>:active</em></code> <code><em>@keyframes</em></code>
+        </p>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="581c15ce-dcfa-4e2a-8327-d6aefbd41dfe"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            JavaScript расширяет возможности, позволяя
+            <code><em>запрограммировать поведение страницы</em></code> при
+            разных обстоятельствах. Например, пользователь может совершить
+            действие, в ответ на которое стили или содержимое страницы изменятся
+          </div>
+        </figure>
+        <p id="a12351e8-e9d8-494d-84c3-85d27144a5ee" class=""></p>
+        <p id="dde21dfb-92ce-4faa-819c-6e5acebc78c7" class="">
+          Ещё раз повторим, чтобы начать использовать
+          <strong>JavaScript</strong>, нужно ответить на 3 вопроса:
+        </p>
+        <ul id="cc531f70-365e-41a9-88ec-1c78a18edf5b" class="bulleted-list">
+          <li style="list-style-type: disc">Что такое алгоритм?</li>
+        </ul>
+        <ul id="f80582ac-1094-4847-8874-ad6f674fb1ee" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Что такое язык программирования?
+          </li>
+        </ul>
+        <ul id="8fd8a76f-8c29-4f1f-9a39-92540dde89b0" class="bulleted-list">
+          <li style="list-style-type: disc">Что такое программа?</li>
+        </ul>
+        <p id="5d6f1cc2-f557-44e1-a789-3c744fe6e190" class="">
+          <code
+            ><em><strong>Алгоритм</strong></em></code
+          ><em><strong> </strong></em>- это последовательность действий для
+          достижения цели.
+        </p>
+        <p id="54abc48d-91d8-4045-8879-4c7e2bd530ca" class="">
+          <code
+            ><strong><em>Язык программирования</em></strong></code
+          >
+          - это язык для общения с машинами, в нашем случае - с браузером. Язык
+          программирования состоит из набора команд. Каждая команда имеет только
+          одно значение.
+        </p>
+        <p id="223aa298-b5ae-4d52-8ced-71403d351249" class="">
+          <code
+            ><strong><em>Программа </em></strong></code
+          ><strong><em> </em></strong>- это
+          <span style="border-bottom: 0.05em solid">алгоритм</span>, записанный
+          на
+          <span style="border-bottom: 0.05em solid">языке программирования</span
+          >. На JavaScript мы будем писать именно такие программы, заставляя
+          браузер следовать определённому алгоритму.
+        </p>
+        <h2 id="1e3c8297-9a14-407f-a794-b34cf56c525e" class="">
+          <strong>Hello World и Console.log()</strong>
+        </h2>
+        <p id="a63139a9-9ead-4478-b0cf-d5b9f4430568" class="">
+          По традиции начнём с написания программы <strong>«</strong
+          ><code><em>Hello, World!</em></code
+          ><strong>»</strong>. Эта программа будет выводить на экран текст.
+          Чтобы вывести что-то на экран, нужно дать компьютеру специальную
+          команду.
+        </p>
+        <p id="72110cad-b482-4bc3-9250-f35e17566d1f" class="">
+          Переходим в <code><em>Google Chrome</em></code
+          >, нажимаем клавишу <code><em>F12</em></code> на клавиатуре для
+          запуска «<code><em>Инструменты разработчика</em></code
+          >» нас сейчас интересует вкладка <strong>Console</strong>
+        </p>
+        <div id="0a3efb65-a15d-4ef7-a9cd-9bba531a0a00" class="column-list">
+          <div
+            id="f2d609b9-5ba3-4f6f-8165-a0797b7a8428"
+            style="width: 18.75%"
+            class="column"
+          >
+            <figure id="2a4ca8ef-f306-4977-9862-3cdcebb785f1" class="image">
+              <a
+                href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_Nn8Px4E2SQ.png"
+                ><img
+                  style="width: 132px"
+                  src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_Nn8Px4E2SQ.png"
+              /></a>
+            </figure>
+          </div>
+          <div
+            id="470de61b-1698-4459-a606-e26844438c89"
+            style="width: 81.25%"
+            class="column"
+          >
+            <p id="0f9296a0-aae0-43db-bc03-64dbb3581f28" class=""></p>
+            <p id="64737ce5-9a4b-46c7-8c30-b4ddf4abd13f" class="">
+              Очистить все содержимое в консоли можно с помощью этой кнопки
+            </p>
+            <p id="aea2ff55-cf43-42b0-9ed1-4da1585abcbd" class=""></p>
+          </div>
+        </div>
+        <p id="f2116ed8-0d74-42c4-989e-7107e08552bd" class="">
+          Видите стрелочку или треугольник синий? Здесь мы будем писать команды
+          для выполнения, т.е. код на языке <code><em>JavaScript</em></code>
+        </p>
+        <figure id="bad13fa2-f6f2-42d5-bf5f-44466433f93f" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled.png"
+            ><img
+              style="width: 1004px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled.png"
+          /></a>
+          <figcaption>Инструменты разработчика в Google Chrome</figcaption>
+        </figure>
+        <p id="a9886f2d-b8dc-48ae-854c-b16dccbf5308" class="">
+          <mark class="highlight-red_background">TODO → Что такое объект</mark>
+        </p>
+        <p id="5e597a66-1b77-4640-bf57-e9391a160293" class="">
+          <mark class="highlight-red_background"
+            >Свойства и методы (действия)</mark
+          >
+        </p>
+        <p id="1318953d-8ec6-45be-88dd-823c6c4eb93b" class=""></p>
+        <figure id="77a45e26-d22b-4bf3-9c33-d814dcdb1fba" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_iedFMghqVs.png"
+            ><img
+              style="width: 828px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_iedFMghqVs.png"
+          /></a>
+          <figcaption>Схема работы объекта и вызов метода</figcaption>
+        </figure>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="b756fe6d-153d-4a08-aad1-208257925194"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            <strong>Console</strong> - это
+            <strong
+              ><code><em>объект</em></code></strong
+            >. У объекта есть
+            <em
+              ><code><strong>свойства</strong></code></em
+            ><em><strong> </strong></em>и
+            <code
+              ><em><strong>методы</strong></em></code
+            >. Доступ до них делается через «точку» «.» это называется точечная
+            нотация.
+          </div>
+        </figure>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="a47103d6-3539-4650-b5b8-ae5510afe7e4"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            <strong>log()</strong> - <em><code>метод</code></em
+            ><em> </em>или <code><em>действие</em></code
+            ><em> </em>или <code><em>функция</em></code
+            ><em> (</em>все слова синонимы в данном случае). Функция всегда
+            состоит из имени и круглых скобок рядом
+            <span style="border-bottom: 0.05em solid">без пробела</span>.
+          </div>
+        </figure>
+        <p id="458114ec-6547-4753-9cf0-427a3b55e6fb" class="">
+          Очень часто внутри круглых скобок что-то написано - это что-то
+          называется
+          <code
+            ><em><strong>аргументами</strong></em></code
+          >функции. В данном случае аргумент функции это строка
+          <code><em>&quot;Hello, World!&quot;</em></code>
+        </p>
+        <p id="f8aac6cd-06e0-4946-b6d3-eed671e65723" class=""></p>
+        <ul id="67031d9f-8362-4cf7-834f-5ba9665c63bd" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Напомните мне почему
+            <code><em>&quot;Hello, World!&quot;</em></code> это строка?
+          </li>
+        </ul>
+        <ul id="fd332e71-0bf7-4a5c-ab59-b0b59a3dd6aa" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Как это определяется в языках программирования?
+          </li>
+        </ul>
+        <p id="a71e1ab5-8074-4fae-a53a-51ad78a04e40" class=""></p>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="1535634e-26f2-4f59-84c3-3ecd1c23731e"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Всё что угодно записаное в <code><em>двойных</em></code> или
+            <code><em>одинарных</em></code> кавычках считается
+            <code><em>строкой</em></code
+            >, т.е. обычным текстом.
+          </div>
+        </figure>
+        <p id="a03c82bb-247c-4558-b2bd-5309e472d7a7" class="">
+          Метод или функция log() объекта консоль, умеет делать, только одно
+          действие, <strong>печатать в консоль</strong> переданный аргумент.
+          Обратите внимание аргументом можно передать ни только текст, но и
+          <strong>число</strong> например.
+        </p>
+        <figure id="9249bb38-0f53-41c1-9547-00042442a8b9" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_DQ9GTRqXk5.png"
+            ><img
+              style="width: 342px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_DQ9GTRqXk5.png"
+          /></a>
+          <figcaption>Вывод строки в консоль</figcaption>
+        </figure>
+        <p id="a24f82fe-a4db-4cd3-96f3-bc81dafe776f" class="">
+          Зачем нам нужна консоль или писать что-то в консоль?
+        </p>
+        <ul id="580399c6-c975-4b80-a5fb-97121f057931" class="bulleted-list">
+          <li style="list-style-type: disc">
+            Чаще всего для вывода <code><em>сообщений об ошибках</em></code> или
+            <code><em>предупреждениях</em></code
+            >,
+          </li>
+        </ul>
+        <ul id="1dd3b955-833f-4d7f-a519-963dd5b8bb1c" class="bulleted-list">
+          <li style="list-style-type: disc">
+            показать полезную информацию для разработчика или тестировщика,
+          </li>
+        </ul>
+        <ul id="2fb7617f-2f14-41d0-a050-ff3d89b57cc4" class="bulleted-list">
+          <li style="list-style-type: disc">
+            так же ее можно использовать как песочницу, чтобы поиграться и
+            быстро проверить какой-то код,
+          </li>
+        </ul>
+        <ul id="76f9f5fc-7029-4121-9e85-f49d84646c9d" class="bulleted-list">
+          <li style="list-style-type: disc">
+            или использовать как калькулятор.
+          </li>
+        </ul>
+        <p id="9837a4b6-eb38-4ee2-9427-7c3ef2e62780" class="">
+          Мы будем пользоваться для вывода результат решения задач например. Но
+          не так часто. Больше будем стараться работать через наш любимый
+          редактор кода VS Code.
+        </p>
+        <h2 id="e4011ca0-512e-4380-bf1a-8c801c3d2ad5" class="">
+          Запускаем VS Code
+        </h2>
+        <p id="69fcebbb-2477-45c2-a469-48b441408f2b" class="">
+          Создадим файл <code><em>index.html</em></code> и напишем в нём
+          стандартную верстку через “!”
+        </p>
+        <figure id="befb0d4b-c728-4ebc-8ed7-2827fd4d47fc" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled%201.png"
+            ><img
+              style="width: 1004px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled%201.png"
+          /></a>
+          <figcaption>Запущенный VSCode с кодом на JS</figcaption>
+        </figure>
+        <pre
+          id="b46600ff-3eb6-4aac-89eb-ac1b962f4c3a"
+          class="code"
+        ><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;JavaScript - 1 Занятие&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;script&gt;
+    // Это однострочный комментарий
+    // Выводим в консоль сообщение &quot;Привет, мир!&quot;
+    console.log(&#x27;Привет, мир!&#x27;)
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="a4892a6c-15cd-420a-a925-95a72a1a7e94"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Пишем скрипты на JavaScript<strong>
+              обязательно в самом низу</strong
+            >
+            верстки перед закрытием тега <code><em>&lt;/body&gt;</em></code>
+          </div>
+        </figure>
+        <p id="3e93f2d8-16f2-48dd-8125-3a2bda8843ea" class="">
+          <code><em>Комментарии</em></code
+          ><em> </em>нужны для помощи программисту, они помогают понять, что
+          делает код рядом с которым они написаны. Используются как заметка на
+          будущее, чтобы не забыть что было сделано или что нужно сделать.
+        </p>
+        <p id="71723da1-428f-492f-b200-b0b5900ceab3" class="">
+          Я привык писать в комментариях теорию к теме которую изучаю, потом
+          удобно просматривать и вспоминать изученные темы.
+        </p>
+        <p id="5f4a9709-31e2-4113-a4f3-4fa1d794a4b8" class="">
+          Запускаем <code><em>Live Server</em></code
+          >, переходим в консоль и проверяем результат (он будет точно такой как
+          и в прошлом примере через инструменты разработчика)
+        </p>
+        <p id="2cb97a78-a87e-49c6-a96d-3fea024085fb" class=""></p>
+        <hr id="d2b88bbf-545e-4a16-b5c8-06a9b0240c8c" />
+        <p id="f966b330-8e77-478d-ba90-ef54ccabf3c7" class="">
+          Чтобы запустить сайт через <code><em>Live Server</em></code
+          ><em> нужно:</em>
+        </p>
+        <ul id="2d787517-1625-4860-b8d2-2552b1730cd0" class="bulleted-list">
+          <li style="list-style-type: disc">
+            В правом нижнем углу нажать на кнопку
+            <code><em>Go Live</em></code> и откроется браузер по умолчанию с
+            нашей страницей <code><em>index.html</em></code
+            >.
+          </li>
+        </ul>
+        <ul id="324764e4-3ed5-4610-a367-e94ccba81b64" class="bulleted-list">
+          <li style="list-style-type: disc">
+            В нужном HTML файле нажать <code><em>ПКМ </em></code>и выбрать пункт
+            меню <code><em>Open With Live Server</em></code>
+          </li>
+        </ul>
+        <div id="f1c1a0b4-54b8-4f64-8899-30d3b54a6be5" class="column-list">
+          <div
+            id="8d1d613d-8deb-425b-89ee-a4b884762f01"
+            style="width: 50.000000000000014%"
+            class="column"
+          >
+            <figure
+              id="46c2c7ff-c2c0-4c79-a55e-231dff52616b"
+              class="image"
+              style="text-align: center"
+            >
+              <a
+                href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_wGOEfzd7bS.png"
+                ><img
+                  style="width: 432px"
+                  src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_wGOEfzd7bS.png"
+              /></a>
+              <figcaption>Запуск сайта с помощью Live Server</figcaption>
+            </figure>
+            <p id="9a3d542d-f74f-4f47-a8f8-e19b36bc5733" class=""></p>
+          </div>
+          <div
+            id="458a4a35-b7cf-482c-958a-ba0b795c378f"
+            style="width: 50%"
+            class="column"
+          >
+            <figure id="04da29a1-cb36-46e6-9b38-21a2b01f55d3" class="image">
+              <a
+                href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Code_qCPXboKUvw.png"
+                ><img
+                  style="width: 432px"
+                  src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Code_qCPXboKUvw.png"
+              /></a>
+              <figcaption>Запуск сайта с помощью Live Server</figcaption>
+            </figure>
+          </div>
+        </div>
+        <hr id="f5f33c53-732f-4a7c-ae03-4e41170785e0" />
+        <p id="2df0769a-fae9-4c11-bff7-b789a5f8a902" class=""></p>
+        <p id="4b8dff28-eb23-46f1-9568-c12efbe8543c" class="">
+          То как мы написали JS код внутри HTML файла является рабочим
+          вариантом, но считается <code><em>плохой практикой</em></code
+          >, когда мы всё пишем в одном файле, тут и верстка (дизайн) тут и
+          программный код (логика) … смешались кони люди …
+        </p>
+        <div id="49de6fd2-18e7-4448-8088-422683b0d15c" class="column-list">
+          <div
+            id="fdc04895-5be3-4511-b885-8067f379e8da"
+            style="width: 56.25%"
+            class="column"
+          >
+            <p id="5a6d0c97-fc8d-4cdc-8049-36dbe50393fc" class=""></p>
+            <p id="55cbace5-bb10-4dd2-b59b-8c832020a2cf" class="">
+              Нужно код на JS вынести в
+              <code><em>отдельный файл</em></code> (как мы делали с файлами
+              стилей css), назовём его <code><em>script.js</em></code> и не
+              забудем подключить его в нашей верстке.
+            </p>
+            <p id="1ac9cb1d-91c1-42f7-89d7-584cc1cc7302" class=""></p>
+          </div>
+          <div
+            id="b6430f00-14a7-4e8c-ad5e-8048977f87f7"
+            style="width: 43.75%"
+            class="column"
+          >
+            <figure id="045fb224-e0ab-49eb-a0bd-7a56fb51d304" class="image">
+              <a
+                href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Code_5AngzuKM4e.png"
+                ><img
+                  style="width: 240px"
+                  src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Code_5AngzuKM4e.png"
+              /></a>
+            </figure>
+          </div>
+        </div>
+        <p id="0f8825f1-f1f1-476c-bd57-71a404910f62" class="">
+          В файле <code><em>script.js</em></code> пишем код на JavaScript (теги
+          <code><em>&lt;script&gt;</em></code
+          ><em> </em>писать
+          <span style="border-bottom: 0.05em solid">не нужно</span>)
+        </p>
+        <pre
+          id="8ca901f4-c5eb-4bce-b9a3-b2c7b755cb9d"
+          class="code"
+        ><code class="language-js">// Это однострочный комментарий
+// Выводим в консоль сообщение &quot;Привет, мир!&quot;
+console.log(&#x27;Привет, мир!&#x27;)</code></pre>
+        <p id="b50f9042-59d9-4452-a6e5-bb464b891253" class="">
+          В файле <code><em>index.html</em></code> подключаем внешний файл
+          <code><em>script.js</em></code
+          ><em> </em>так же в самом низу страницы перед тегом<em> </em
+          ><code><em>&lt;/body&gt;</em></code>
+        </p>
+        <pre
+          id="14b1c0d9-338b-4d70-9f88-a9c4c76991d5"
+          class="code"
+        ><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;JavaScript - 1 Занятие&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;!-- Подключаем внешний файл script.js --&gt;
+  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+        <h2 id="5b8a7287-ee92-47f2-a862-1277edac4e73" class="">
+          Команда alert()
+        </h2>
+        <p id="c1b22f29-d022-4b8b-ad72-db639e05aa0b" class="">
+          Команда <code><em>alert()</em></code> ― ещё один способ посмотреть на
+          данные. Работает точно также, как и <code><em>console.log()</em></code
+          >, но результат оказывается не в консоли, а во
+          <code><em>всплывающем окне</em></code
+          ><em> </em>браузера.
+        </p>
+        <pre
+          id="d3036410-2588-4624-b3d8-51902683b60d"
+          class="code"
+        ><code class="language-js">console.log(&#x27;Привет, мир!&#x27;)
+
+// Используем встроенную функцию alert()
+alert(&#x27;Изучать JavaScript - это офигенно, отвечаю!&#x27;)</code></pre>
+        <figure id="7b09e4b9-bacf-4021-89ec-9850731ef260" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_9Y7AUrV825.png"
+            ><img
+              style="width: 507px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/chrome_9Y7AUrV825.png"
+          /></a>
+          <figcaption>
+            Результат работы функции alert(&#x27;Изучать JavaScript - это
+            офигенно, отвечаю!&#x27;)
+          </figcaption>
+        </figure>
+        <h2 id="8a13b144-ea33-406c-8910-163c5209d06a" class="">
+          <strong>Инструкции</strong>
+        </h2>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="62e28f80-239e-4a38-8fb8-64aac18d4de2"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            <strong>Инструкция</strong> — это команда для компьютера выполнить
+            что-то. Код на <code><em>JavaScript</em></code
+            >(любом другом языке программирования) — это
+            <code><em>набор инструкций</em></code
+            >, которые, как правило, отделяются друг от друга символом «<em
+              >Точка с запятой</em
+            >» «;»
+          </div>
+        </figure>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="d29de9cf-665a-49ff-a473-ea8f7b6d68a0"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Инструкции обязательно выполняются <strong>последовательно</strong>,
+            сверху ⬇ вниз
+          </div>
+        </figure>
+        <h3 id="4afe4141-b76e-4065-9356-f29d321d8787" class="">
+          На что инструкции похожи из жизни?
+        </h3>
+        <p id="c70b5eeb-16ab-4fb8-bd88-1f2e745b8fcb" class="">
+          Например есть инструкция как что-то приготовить (<code
+            ><em>рецепт</em></code
+          >), как мы будем готовить бутерброд?
+        </p>
+        <figure id="b86d1050-f6fd-4408-834d-4a0127e69297" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_nlnA0ii0jo.png"
+            ><img
+              style="width: 1028px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_nlnA0ii0jo.png"
+          /></a>
+        </figure>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="66bb2907-0c4d-42ab-a18b-b2364cd915a0"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Это называется
+            <em
+              ><code><strong>Алгоритмом</strong></code></em
+            ><em><strong> </strong></em>действий.
+          </div>
+        </figure>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="f14b5d0f-35e9-4b87-845d-007f28a8b583"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Тоже самое в программировании, последовательно друг за другом
+            следуют инструкции, которые приведут к запланированному результату.
+          </div>
+        </figure>
+        <figure
+          class="block-color-gray_background callout"
+          style=" display: flex"
+          id="76c67cd3-bcae-42d3-b3b3-92e447a74507"
+        >
+          <div style="font-size: 1.5em"><span class="icon">💡</span></div>
+          <div style="width: 100%">
+            Ещё существует
+            <strong
+              ><code><em>эффективность</em></code></strong
+            ><strong><em> </em></strong>алгоритма. Насколько вы хорошо
+            придумаете алгоритм и запрограммируете его, настолько правильно
+            будет работать итоговая программа или задача.
+          </div>
+        </figure>
+        <p id="6e04070b-8113-4a10-ae82-87a1c80ce48e" class=""></p>
+        <hr id="f39d9646-252b-4d5d-908e-1f80155658c9" />
+        <figure id="998f1ca8-50f1-4eb0-a22c-6a5757091c6c" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_g6kK5ZmVhV.png"
+            ><img
+              style="width: 576px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_g6kK5ZmVhV.png"
+          /></a>
+        </figure>
+        <p id="0dfb04af-087b-4520-80bf-306e50377bb8" class="">
+          Проведем очень наглядную демонстрацию 👀 Назовем ее
+          <code><em>бутербродный алгоритм</em></code
+          >.
+        </p>
+        <p id="2d648567-5ab9-4304-906e-e5b8e3ad8427" class="">
+          Нужно два человека, которые будут исполнителями кода, по умному
+          <code><em>интерпретаторами</em></code
+          >. Они будут интерпретировать наши действия, то что программист им
+          скажет делать.
+        </p>
+        <p id="9cd10d56-699a-4717-af52-2e939ee22c83" class="">
+          Все остальные в аудитории будут программистами. Результат будет
+          зависеть от такого насколько подробный и правильный алгоритм мы будем
+          задавать нашим интерпретаторам.
+        </p>
+        <hr id="6e220a62-a76c-4b0d-860c-b23826183a6c" />
+        <h2 id="2b9f20d3-a99c-40a7-a624-18466b8339f5" class="">
+          Арифметические операции
+        </h2>
+        <p id="82b9f1b7-02bb-4cf3-93fb-10f91b890635" class="">
+          В <code><em>JavaScript</em></code
+          ><em> </em>можно производить арифметические операции с числами:
+          складывать, умножать, делить, вычитать, возводить в степень, вычислять
+          остаток от деления. Всё по правилам математики.
+        </p>
+        <p id="e9387b2b-b60c-43e9-a8ae-a2f98e3f8617" class="">
+          <strong>Используем консоль как калькулятор</strong>
+        </p>
+        <figure id="f9772a20-ece5-4789-af3f-4af86649b885" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled%202.png"
+            ><img
+              style="width: 1004px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled%202.png"
+          /></a>
+          <figcaption>Арифметические операции</figcaption>
+        </figure>
+        <p id="59a701a3-5c61-4812-b96a-32e4669e249f" class="">
+          <strong>Операторы</strong>
+        </p>
+        <p id="7ee6ccf0-96f3-4dc8-9005-58407c56d5bf" class="">
+          Перед тем, как двигаться дальше, разберём базовую терминологию. Знак
+          операции, такой как ”<code><em>+</em></code
+          >” называют <strong>оператором</strong>. Операторы выполняют операции
+          над определенными значениями, которые
+          называются <strong>операндами</strong>.
+        </p>
+        <p id="63dc5608-a527-4006-981d-3335d9aeac00" class="">
+          <strong>Приоритет операций</strong>
+        </p>
+        <div id="9a908d3d-a026-4497-b641-10b5963bc461" class="column-list">
+          <div
+            id="c98f39f2-87be-4a40-bbe0-b0d33f25ff52"
+            style="width: 43.75%"
+            class="column"
+          >
+            <figure id="499a8302-ad97-4b35-82ea-49b96c7a3c76" class="image">
+              <a
+                href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_tyBePG067G.png"
+                ><img
+                  style="width: 344px"
+                  src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/msedge_tyBePG067G.png"
+              /></a>
+            </figure>
+          </div>
+          <div
+            id="80f698e7-3b3c-42ea-a1ca-6b17c4865e22"
+            style="width: 56.25%"
+            class="column"
+          >
+            <p id="e06cb0f1-93a5-4985-aca9-9947b1698459" class="">
+              Посмотрите внимательно на выражение 
+              <code><em>2 + 2 * 2</em></code
+              > и посчитайте в уме ответ. Правильный ответ: 6
+            </p>
+          </div>
+        </div>
+        <div id="45a0be17-1a2a-4b5d-aa58-ef0b9c12bf58" class="column-list">
+          <div
+            id="caf5ebb8-0d9a-40c3-9238-1438b3581fdf"
+            style="width: 37.5%"
+            class="column"
+          >
+            <p id="f90d7049-e6e0-4437-a936-84ab08af7e0c" class="">
+							<ol>
+								<li>Действия в скобках</li>
+								<li>Возведение в степень</li>
+								<li>Умножение и деление</li>
+								<li>Сложение и вычитание</li>
+							</ol>
+            </p>
+          </div>
+          <div
+            id="35d208bc-ea3e-40b1-aac5-e5c6fea8c988"
+            style="width: 62.5%"
+            class="column"
+          >
+            <figure id="ea0fddd7-63aa-4d5f-a916-ed7368a2baf9" class="image">
+              <a
+                href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/WINWORD_HytzmRCJYD.png"
+                ><img
+                  style="width: 400px"
+                  src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/WINWORD_HytzmRCJYD.png"
+              /></a>
+            </figure>
+          </div>
+        </div>
+        <h2 id="c7addf07-e56d-425d-bfd0-ff11e0282886" class="">
+          <strong>Linter</strong>
+        </h2>
+        <p id="d3979733-1d8b-4f9a-b1b1-bb525cae3496" class="">
+          Когда мы ошибаемся в написании синтаксиса, у нас есть прекрасный
+          помощник, который называется <code><em>Линтер</em></code
+          >, обычно он уже есть в <code><em>VSCode</em></code
+          >, но можно установить и  настроить его различный версии.
+        </p>
+        <p id="c5f565a3-8c4a-49fd-99e3-7887aa152e42" class="">
+          <em>На что это похоже?</em>
+        </p>
+        <p id="f9e3fe71-943b-4352-838a-bd0b6bf2d8d8" class="">
+          Допустим когда мы набираем текст в офисной программе (например
+          <code><em>Word</em></code
+          >) и делаем орфографическую ошибку, она у нас подчеркивается красным
+          цветом.
+        </p>
+        <p id="f8a39394-bcac-40d3-abfb-e392d897b889" class="">
+          Точно также работает, <code><em>Линтер </em></code>в программном коде,
+          он будет подчёркивать красным там где у нас ошибка и выдавать
+          подсказку как ее исправить.
+        </p>
+        <figure id="b4a2373f-45bf-4835-b777-4625cc009de0" class="image">
+          <a
+            href="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled%203.png"
+            ><img
+              style="width: 1004px"
+              src="%D0%97%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%202%20-%20Google%20Chrome%20VSCode%20%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%20817e3277cd07489e9c7c9a9472abbae3/Untitled%203.png"
+          /></a>
+        </figure>
+        <h2 id="0df87d49-0182-401b-a8b1-73c49d4dc4f0" class="">
+          Практическая часть 💪
+        </h2>
+        <p id="567354c2-b8a6-4786-8986-b8af16e7ed20" class=""></p>
+      </div>
+    </article>
+
+		<script src="prism/prism.js"></script>
+    <!-- <script src="highlight/highlight.min.js"></script> -->
+    <!-- <script>hljs.highlightAll();</script> -->
+  </body>
+</html>
