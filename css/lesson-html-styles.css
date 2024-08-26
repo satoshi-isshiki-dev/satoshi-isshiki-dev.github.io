@@ -67,9 +67,10 @@ main article a.visited {
 	text-decoration: none;
 }
 .lessons-list a:hover {
-  background-color: #cbcbcb;
+	text-decoration: underline;
+  /* background-color: #cbcbcb;
 	border-radius: 16px;
-	padding: 5px;
+	padding: 5px; */
 }
 
 

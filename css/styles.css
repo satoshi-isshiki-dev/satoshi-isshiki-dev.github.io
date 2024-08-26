@@ -125,3 +125,8 @@ main {
 
 	flex-direction: column;
 }
+
+.pdf-link:hover {
+	background-color: none;
+	background: none;
+}
